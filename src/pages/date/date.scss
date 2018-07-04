@@ -1,0 +1,63 @@
+page-date {
+    .scroll-content {
+        overflow: hidden;
+    }
+    .item-inner {
+        border-bottom: none !important;
+    }
+    .SignBtn {
+        width: 49%;
+        border-radius: 20px;
+        font-size: 14px;
+        height: 35px;
+        color: white;
+        background-color: #D80D88;
+    }
+    .RejectBtn {
+        width: 49%;
+        border-radius: 20px;
+        font-size: 14px;
+        height: 35px;
+        color: white;
+        background-color: #6CB4F3;
+    }
+    .image {
+        height: 100%;
+        width: 100%;
+        -webkit-filter: blur(10px);
+        -moz-filter: blur(10px);
+        -o-filter: blur(10px);
+        -ms-filter: blur(10px);
+        filter: blur(10px);
+        margin-top: 10% !important;
+    }
+    .transparent {
+        background-color: #f2f2f2;
+        color: black;
+    }
+    .trans {
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    .img-bg-rotate {
+        position: absolute !important;
+        height: 100% !important;
+        width: 86% !important;
+        background: white;
+        -webkit-transform: rotate(171deg) skew(0deg);
+        transform: rotate(171deg) skew(0deg);
+        margin-left: 7%;
+        border: 0.5px solid #e0e0e0;
+    }
+    .round-bottom-div {
+        background: white;
+        height: 500px;
+        border-radius: 65%;
+        width: 140%;
+        margin-left: -19%;
+        position: relative;
+        padding: 5%;
+        text-align: center
+    }
+}
+
+//background-repeat:no-repeat !important; background-size: 500px 350px !important;background: url('/assets/images/Rectangle-path.png')

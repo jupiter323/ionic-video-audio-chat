@@ -1,0 +1,102 @@
+<ion-header>
+
+	<ion-navbar >
+
+		<ion-row class="titleClass">
+			<ion-col col-4>
+				<ion-row>
+					<button class="closeBtn" (click)="redirect()">
+						<ion-icon name="close"></ion-icon>
+					</button>
+					<button *ngIf="!modifierSelected" class="modifier" (click)="modifier()">Modifier</button>
+					<button *ngIf="modifierSelected" class="modifier" (click)="modifier()">Ok</button>
+				</ion-row>
+			</ion-col>
+			<ion-col col-4>
+				<ion-row class="distinguish">
+					<ion-col col-6 [ngClass]="selectedAll?'selected':'unselected'" class="allButton" (click)="selectAll()">All</ion-col>
+					<ion-col col-6 [ngClass]="selectedMissed?'selected':'unselected'" (click)="selectMissed()">Missed</ion-col>
+				</ion-row>
+			</ion-col>
+			<ion-col col-4>
+				<ion-row class="addButton">
+					<ion-icon *ngIf="!modifierSelected" name="md-person-add" (click)="goFriend()"></ion-icon>
+					<button *ngIf="modifierSelected" class="modifierCancel" (click)="modifierCanceled()">Cancel</button>
+				</ion-row>
+			</ion-col>
+		</ion-row>
+
+		<div id="Header2">
+			<ion-searchbar [(ngModel)]="searchValue" [showCancelButton]="shouldShowCancel" (ionInput)="searchFunction(searchValue)" (ionCancel)="clearSearch()">
+			</ion-searchbar>
+
+		</div>
+	</ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="transparent trans pad-l-r">
+        <ion-row no-lines class="mainDiv transparent trans2" *ngFor="let call of calls;let i=index" style="border-bottom: .5px solid gray;">
+		<ion-col col-1 *ngIf="modifierSelected" (click)="deleteCall(i)">
+			<ion-row class="removemodifiercover">
+				<ion-icon class="removemodifier" name="md-remove-circle"></ion-icon>
+			</ion-row>
+		</ion-col>
+
+		<ion-col col-2>
+			<div class="avatar">
+				<img [src]="call.Profile_pic" />
+			</div>
+		</ion-col>
+
+		<ion-col col-9 *ngIf="modifierSelected">
+			<ion-row class="itemDes">
+				<span class="name">{{call.userName}}</span>
+				<br/>
+				<ion-row class="messtime">
+					<span *ngIf="call.date[0] === dateCheck[0]" class="day">{{call.date[1]}}</span>
+					<span *ngIf="call.date[0] ==  dateCheck[1]" class="day">Yesterday</span>
+					<span *ngIf="( call.date[0] !==  dateCheck[0] && call.date[0] !== dateCheck[1] )" class="day">{{call.date[0]}}</span>
+
+					<!-- <ion-icon class="friendIcon" name='ios-information-circle-outline'></ion-icon> -->
+				</ion-row>
+				<div class="callstyle">
+          <ion-icon class="callkind" name={{call.callKind}}></ion-icon>
+          <span *ngIf="call.outIn=='out'" class="callkind">Outgoing</span>
+          <span *ngIf="call.outIn=='in'" class="callkind">Incomming</span>
+
+					<!-- <span *ngIf="call.callKind=='videocam'" class="callkind">Video call</span>
+					<span *ngIf="call.callKind=='call'" class="callkind">Phone call</span>
+
+					<ion-icon class="arrow" *ngIf="call.outIn=='out'" style="color:green" name="arrow-round-up"></ion-icon>
+					<ion-icon class="arrow" *ngIf="call.outIn=='in'" style="color:red" name="arrow-round-down"></ion-icon> -->
+				</div>
+			</ion-row>
+		</ion-col>
+		<ion-col col-10 *ngIf="!modifierSelected">
+			<ion-row class="itemDes">
+				<span class="name">{{call.userName}}</span>
+				<br/>
+				<ion-row class="messtime">
+					<span *ngIf="call.date[0] === dateCheck[0]" class="day">{{call.date[1]}}</span>
+					<span *ngIf="call.date[0] ==  dateCheck[1]" class="day">Yesterday</span>
+					<span *ngIf="( call.date[0] !==  dateCheck[0] && call.date[0] !== dateCheck[1] )" class="day">{{call.date[0]}}</span>
+
+					<!-- <ion-icon class="friendIcon" name='ios-information-circle-outline'></ion-icon> -->
+				</ion-row>
+				<div class="callstyle">
+					<ion-icon class="callkind" name={{call.callKind}}></ion-icon>
+					<span *ngIf="call.outIn=='out'" class="callkind">Outgoing</span>
+          <span *ngIf="call.outIn=='in'" class="callkind">Incomming</span>
+
+					<!-- <span *ngIf="call.callKind=='videocam'" class="callkind">Video call</span>
+					<span *ngIf="call.callKind=='call'" class="callkind">Phone call</span>
+
+					<ion-icon class="arrow" *ngIf="call.outIn=='out'" style="color:green" name="arrow-round-up"></ion-icon>
+					<ion-icon class="arrow" *ngIf="call.outIn=='in'" style="color:red" name="arrow-round-down"></ion-icon> -->
+				</div>
+			</ion-row>
+		</ion-col>
+	</ion-row>
+</ion-content>

@@ -1,0 +1,65 @@
+<ion-header>
+  <toolbar></toolbar>
+</ion-header>
+
+
+<ion-content padding>
+
+<div *ngIf="profileComplete">
+  <div *ngFor="let info of profileinfo let m = index " class="profile">
+    <div *ngIf="m == 0" class="border-bottom">
+      <div class="title">{{info.title}}</div>
+      <ion-range debounce="70" min="18" max="98" [(ngModel)]="dumAge" color="primary" pin="true" (ionChange)="setrange($event)"><ion-label range-right>{{dumAge}}</ion-label></ion-range>
+    </div>
+    <ion-row *ngIf="m == 2" class="border-bottom" [(ngModel)]="gender">
+      <ion-col class="combo-label">{{info.title}}</ion-col>
+      <ion-col >
+        <ion-select class="combo-select">
+          <ion-option *ngFor="let option of info.options" value="{{option}}">{{option}}</ion-option>
+        </ion-select>
+      </ion-col>
+    </ion-row>
+    <ion-row *ngIf="m == 3" class="border-bottom" [(ngModel)]="orientation">
+      <ion-col col-auto class="combo-label">{{info.title}}</ion-col>
+      <ion-col >
+        <ion-select class="combo-select">
+          <ion-option *ngFor="let option of info.options" value="{{option}}">{{option}}</ion-option>
+        </ion-select>
+      </ion-col>
+    </ion-row>
+    <div class="border-bottom pd-t-b-20" *ngIf="m == 1" >
+      <div class="combo-label" style="margin-bottom: 2vh">{{info.title}}</div>
+      <div class="label-container" radio-group [(ngModel)]="intension">
+          <ion-item class="iolist" *ngFor="let option of info.options">
+            <ion-label>{{option}}</ion-label>
+            <ion-radio value="{{option}}" checked></ion-radio>
+          </ion-item>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="profile">
+    <ion-row class="border-bottom">
+      <ion-col class="combo-label">Country</ion-col>
+      <ion-col>
+        <ion-select class="combo-select" [(ngModel)]="country" (ionChange)="countryChanged(country)">
+          <ion-option *ngFor="let country of countries" value="{{country}}">{{country}}</ion-option>
+        </ion-select>
+      </ion-col>
+    </ion-row>
+    <ion-row class="border-bottom">
+      <ion-col class="combo-label">City</ion-col>
+      <ion-col>
+        <ion-select class="combo-select" [(ngModel)]="city">
+          <ion-option *ngFor="let city of cities" value="{{city}}">{{city}}</ion-option>
+        </ion-select>
+      </ion-col>
+    </ion-row>
+  </div>
+
+</div>
+<div style="width: 100%; text-align: center; margin-top: 5%">
+<button style="width: 70%; font-size: 14px" *ngIf="profileComplete" ion-button round large [disabled]="(!country || !city || !age || !gender || !orientation || !intension)" (click)="submit([age, gender, orientation, intension, country, city])">Update</button>
+</div>
+</ion-content>

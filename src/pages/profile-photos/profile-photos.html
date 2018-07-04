@@ -1,0 +1,85 @@
+<ion-content>
+  <!-- <div class="backgroundF">
+    <ion-icon name="close" (click)="goback()"></ion-icon>
+  </div>
+
+
+  <ion-row style="align-items:center;">
+    <ion-col col-3>
+
+    </ion-col>
+    <ion-col col-6>
+      <div class="round">
+        <img [src]="baseurl+image" />
+      </div>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <h3 class="name_style">{{data?.userName}}</h3>
+  </ion-row>
+
+  <p>photos</p>
+
+  <div class="photos">
+    <div class="photos_row">
+      <div class="photos_col">
+        <img *ngIf="photos[0]" [src]="baseurl+photos[0]">
+      </div>
+      <div class="photos_col">
+        <img *ngIf="photos[1]" [src]="baseurl+photos[1]">
+      </div>
+      <div class="photos_col">
+        <img *ngIf="photos[2]" [src]="baseurl+photos[2]">
+      </div>
+    </div>
+    <div class="photos_row">
+      <div class="photos_col">
+        <img *ngIf="photos[3]" [src]="baseurl+photos[3]">
+      </div>
+      <div class="photos_col">
+        <img *ngIf="photos[4]" [src]="baseurl+photos[4]">
+      </div>
+      <div class="photos_col">
+        <img *ngIf="photos[5]" [src]="baseurl+photos[5]">
+      </div>
+    </div>
+  </div> -->
+
+  <div class="uploadPhoto" style="background-image: url('assets/images/blindy-profile-background.jpg')">
+    <ion-icon name="close" (click)="goback()"></ion-icon>
+    <div class="bio-div">
+      <div class="name">{{data?.userName}}</div>
+    </div>
+    <div class="profile-image-div">
+        <img [src]="baseurl+image">
+    </div>
+    <br>
+
+  </div>
+
+  <div class="photos">
+      <div style="color: #D80D88;font-size: 11px;font-weight: bold;">MY PHOTOS</div>
+      <div class="photos_row">
+          <div class="photos_col">
+            <img *ngIf="photos[0]" [src]="baseurl+photos[0]">
+          </div>
+          <div class="photos_col">
+            <img *ngIf="photos[1]" [src]="baseurl+photos[1]">
+          </div>
+          <div class="photos_col">
+            <img *ngIf="photos[2]" [src]="baseurl+photos[2]">
+          </div>
+        </div>
+        <div class="photos_row">
+          <div class="photos_col">
+            <img *ngIf="photos[3]" [src]="baseurl+photos[3]">
+          </div>
+          <div class="photos_col">
+            <img *ngIf="photos[4]" [src]="baseurl+photos[4]">
+          </div>
+          <div class="photos_col">
+            <img *ngIf="photos[5]" [src]="baseurl+photos[5]">
+          </div>
+      </div>
+  </div>
+</ion-content>

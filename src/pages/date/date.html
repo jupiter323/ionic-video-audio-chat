@@ -1,0 +1,36 @@
+<ion-content class="transparent trans" (click)="redirect()" no-bounce style="overflow: hidden !important;">
+    <ion-row class="transparent" style="height:100% !important">
+        <ion-col class="transparent" offset-xl-2 offset-lg-2 offset-md-2 offset-sm-1 col-xl-8 col-lg-8 col-md-8 col-sm-10 col-12>
+            <ion-list class="transparent">
+                <ion-item class="signIn transparent" no-lines>
+                    <ion-icon class="transparent" name="close"></ion-icon>
+                    <span offset-xl-5 offset-lg-5 offset-md-5 offset-sm-5 offset-4 class="transparent">Profile</span>
+                </ion-item>
+                <div style="text-align:center !important;position:relative !important;height:100%;width:100%;">
+                    <div class="img-bg-rotate"></div>
+
+
+                    <ion-item class="transparent" no-lines col-12 col-xl-10 offset-1 offset-lg-5 offset-md-5 offset-sm-5 style="padding-left:5%;background:white !important;border: 0.5px solid #e0e0e0; width:90%; margin-left:5%">
+
+
+                        <img class="image" offset-xl-4 offset-lg-2 offset-md-1 offset-sm-1 src="{{provider.url+''+friendInfo.Profile_pic}}">
+                        <img class="image">
+                        <div offset-xl-4 offset-lg-2 offset-md-1 offset-sm-1 style="width:350px;font-weight: bold;">
+                            <br/>
+
+                        </div>
+                    </ion-item>
+                </div>
+                <br><br>
+                <div class="round-bottom-div">
+                    <h2 style="color:#4A4A4A;font-size:20px;">{{friendInfo.userName}}</h2>
+                    <p style="color:#4A4A4A;font-size:12px;">{{friendInfo.age}} / {{friendInfo.gender}} / {{friendInfo.orientation}}</p>
+                    <ion-item class="" style="border:none !important; padding-right: 9%; padding-left: 13%">
+                        <button offset-xl-2 col-xl-8 offset-lg-2 col-lg-8 col-md-9 col-sm-10 offset-md-1 offset-sm-1 class="RejectBtn" (click)="redirect()">Reject</button>
+                        <button offset-xl-2 col-xl-8 offset-lg-2 col-lg-8 col-md-9 col-sm-10 offset-md-1 offset-sm-1 class="SignBtn" (click)="sendMessage()">Chat</button>
+                    </ion-item>
+                </div>
+            </ion-list>
+        </ion-col>
+    </ion-row>
+</ion-content>

@@ -1,0 +1,71 @@
+page-index {
+    ion-input {
+        border-bottom: 1px solid lightgrey;
+        font-family: arial;
+        color: #DE127A;
+        font-size: 15px;
+    }
+    #logo {
+        height: 250px;
+        // width: 250px;
+        width: 100%;
+        // border-radius: 50%;
+        margin-top: -10px;
+    }
+    .indexBtn {
+        width: 100%;
+        border-radius: 20px;
+        font-size: 20px;
+        height: 35px;
+        color: white;
+        background-color: #D80D88;
+    }
+    .errMessage {
+        color: red;
+        font-size: 13px;
+        display: none;
+    }
+    .returnLog {
+        border: 1px solid grey;
+        border-radius: 30px;
+        padding: 5px;
+    }
+    .login-btn {
+        width: 99%;
+        border-radius: 40px;
+        font-size: 20px;
+        color: #DE127A;
+        background-color: transparent;
+        border: 1px solid #DE127A;
+        opacity: 1 !important;
+        padding: 10% !important;
+    }
+    .forgot-btn {
+        width: 100%;
+        border-radius: 20px;
+        font-size: 20px;
+        color: #6CB4F3;
+        font-size: 14px;
+        background-color: transparent;
+    }
+    .signup-btn {
+        width: 100%;
+        border-radius: 20px;
+        // margin-top: 50%;
+        font-size: 20px;
+        color: #DE127A;
+        font-size: 14px;
+        background-color: transparent;
+    }
+    .sign-btn {
+        width: 99%;
+        border-radius: 40px;
+        font-size: 12px !important;
+        color: #DE127A !important;
+        background-color: transparent;
+        border: 1px solid #DE127A;
+        opacity: 1 !important;
+        margin-top: 20% !important;
+        padding: 5% !important
+    }
+}

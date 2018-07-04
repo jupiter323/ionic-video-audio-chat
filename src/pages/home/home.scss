@@ -1,0 +1,567 @@
+page-home {
+  .scroll-content {
+    // overflow: hidden !important;
+  }
+  ion-navbar {
+    position: fixed;
+    z-index: 10000;
+  }
+  .my-content{
+    margin-top: 55px
+  }
+  ion-grid {
+      height: 100%;
+      ion-row {
+          height: 100%;
+          ion-col {
+              height: 100%;
+          }
+      }
+  }
+  .ios .search{
+    padding: 0px 15px 15px 15px !important;
+  }
+  .searchbar-ios{
+    background-color: transparent;
+  }
+  .tabstyle {
+      padding-bottom: 0px;
+      padding-top: 10px
+  }
+  #Header {
+      padding: 0px;
+      width: 100%;
+  }
+  #Header2 {
+      padding-top: 10px;
+      padding-left: 10px;
+      padding-bottom: 6px;
+      box-shadow: 0px 0px 2px lightgrey;
+      display: none;
+      width: 100%;
+      border-bottom: 1px;
+  }
+  .slideDiv {
+      border-top: 3px solid #af0f6f;
+  }
+  .friendIcon {
+      margin-right: 20px;
+      color: #D80D88;
+      font-size: 20px;
+  }
+  .appName {
+      margin: auto;
+      padding-left: 10px;
+      font-size: 25px;
+      color: white;
+      font-family: High_Tide;
+      font-weight: bold;
+  }
+  .friendImage {
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      position: absolute;
+      top:12px;
+
+  }
+  #logo {
+      height: 250px;
+      width: 250px;
+      border-radius: 50%;
+  }
+  #fixedHeader {
+      position: fixed;
+  }
+  .mainDiv {
+      height: 77px;
+      border-top: 0.55px solid #c8c7cc !important;
+      border-bottom: 0.55px solid #c8c7cc !important;
+      .item-ios {
+          position: absolute;
+          top: 15px;
+          left: 70px;
+          .requestsent{
+              position: absolute;
+              top:4px;
+              right:20px;
+              .requestspan{
+                  position: absolute;
+                  right:60px;
+
+              }
+          }
+          .friendUn{
+              position: absolute;
+              top: 23px;
+              right: 22px!important;
+          }
+          .itemicon{
+              position: absolute;
+              right: 20px;
+              top: 15px;
+
+          }
+      }
+  }
+  .content {
+      overflow: hidden;
+      overflow-y: auto;
+      padding-bottom: 100px;
+  }
+  #blindy {
+      padding-top: 10px;
+      text-align: center;
+  }
+  .acceptbtn {
+    color: #f2f2f2;
+    border: 1px solid #6CB4F3;
+    background-color: #6CB4F3;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 7px;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.16);
+  }
+  .acceptbtn-dis {
+    color: #6CB4F3;
+    border: 1px solid #6CB4F3;
+    background-color: transparent;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 7px;
+  }
+  .name {
+      position: relative;
+      top: 0px;
+      font-size: 15px;
+      font-weight: bold;
+      color: black
+  }
+  .messtime {
+      font-size: 12px;
+      float: right;
+      margin-right: 21px;
+  }
+  .unread {
+      padding: 3px;
+      padding-left: 6px;
+      padding-right: 6px;
+      margin-right: -20px;
+      color: white;
+      background-color: #5dbfee;
+      ;
+      border-radius: 20px;
+      font-weight: bold;
+  }
+  .unreadF {
+      padding: 0px;
+      padding-left: 2px;
+      padding-right: 2px;
+      position: absolute;
+      color: white;
+      font-size: 8px;
+      background-color: #5dbfee;
+      border-radius: 50%;
+      font-weight: bold;
+      top: 52px;
+      right: 41px;
+  }
+  .friendNote {
+      color: lightgreen;
+      border-radius: 50%;
+      background-color: lightgreen;
+      font-size: 7px;
+      display: none;
+  }
+  .chatNote {
+      color: lightgreen;
+      display: none;
+      font-size: 13px;
+  }
+  .itemDes {
+      display: inline-block;
+      width: 90%;
+      font-size: 13px;
+      color: grey;
+      padding: 0px;
+      margin: 0px;
+      height: 64px;
+  }
+  ion-slide.swiper-slide {
+      align-items: flex-start;
+      overflow-y: auto;
+      background: #efeef4;
+      img {
+          max-height: none !important;
+      }
+  }
+  input {
+      border: none;
+      width: 75%;
+      font-size: 15px;
+      margin-left: 10px;
+      height: 30px;
+  }
+  .ionlist {
+      font-size: 16px;
+  }
+  .indexBtn {
+      width: 80%;
+      border-radius: 20px;
+      font-size: 14px;
+      height: 35px;
+      color: white;
+      background-color: #D80D88;
+  }
+  .backArrow {
+      font-size: 25px;
+      padding: 5px;
+      color: #D80D88;
+  }
+  .iconClose {
+      color: #D80D88;
+  }
+  .menu-items {
+    display: block;
+    font-size: 14px;
+    background: none;
+    margin-top: 1vh;
+    width: 100%;
+    .item {
+      text-align: left;
+      width: 70% !important;
+      padding-bottom: 10px;
+      display: inline-block;
+    }
+
+    .item-icon {
+      text-align: right;
+      padding-right: 3%;
+      width: 25% !important;
+      display: inline-block;
+    }
+  }
+  .searchIcon {
+      font-size: 20px;
+      color: white;
+      float: left;
+      margin-right: 15px;
+      padding: 5px;
+      background-color: transparent;
+  }
+  .title {
+      color: black;
+      font-size: 14px;
+      height: 20px;
+  } // Sidemenu with avatar
+  #menu-avatar {
+      h3,
+      .label {
+          color: white;
+          font-weight: bold;
+      }
+      .item {
+          background: transparent;
+      }
+      .menu-inner {
+          background: rgba(255, 255, 255, .3);
+      }
+  }
+  .profile {
+      .select,
+      .item,
+      .ionlist {
+          font-size: 14px !important;
+          padding-left: 10px !important;
+      }
+      margin: 0 !important;
+  }
+  .search {
+    background-color: #f2f2f2;
+    padding: 15px;
+    input {
+        border: none;
+        width: 75%;
+        font-size: 15px;
+        margin-left: 10px;
+        height: 30px;
+    }
+  }
+    .ionlist {
+        font-size: 16px;
+    }
+    .indexBtn {
+        width: 80%;
+        border-radius: 20px;
+        font-size: 14px;
+        height: 35px;
+        color: white;
+        background-color: #D80D88;
+    }
+    .backArrow {
+        font-size: 25px;
+        padding: 5px;
+        color: #D80D88;
+    }
+    .iconClose {
+        color: #D80D88;
+    }
+    .menu-items {
+        display: block;
+        font-size: 14px;
+        background: none;
+        margin-top: 1vh;
+        width: 100%;
+        .item {
+            text-align: left;
+            width: 70% !important;
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+        .item-icon {
+            text-align: right;
+            padding-right: 3%;
+            width: 25% !important;
+            display: inline-block;
+        }
+    }
+    .searchIcon {
+        font-size: 20px;
+        color: white;
+        float: left;
+        margin-right: 15px;
+        padding: 5px;
+        background-color: transparent;
+    }
+    .title {
+        color: black;
+        font-size: 14px;
+        height: 20px;
+    } // Sidemenu with avatar
+    #menu-avatar {
+        h3,
+        .label {
+            color: white;
+            font-weight: bold;
+        }
+        .item {
+            background: transparent;
+        }
+        .menu-inner {
+            background: rgba(255, 255, 255, .3);
+        }
+    } // profile upload photo
+    .uploadPhoto {
+      background-image: url('assets/images/blindy-profile-background.jpg');
+      position: relative;
+      background-size: cover;
+      margin-top: 0px;
+      padding-top: 35px;
+      height: 20%;
+      .profile-image-div {
+            margin: auto;
+            background: #7f7f7f;
+            position: relative;
+            border-radius: 50%;
+            width: 125px !important;
+            height: 125px !important;
+            ion-icon {
+                margin-top: 17px;
+                color: white;
+                font-size: 17px;
+            }
+            p {
+                color: white;
+                font-size: 10px;
+                font-weight: 100
+            }
+            img {
+                border-radius: 50%;
+                width: 125px !important;
+                height: 125px !important;
+                max-width: 126px;
+                object-fit: cover;
+            }
+        }
+        .bio-div {
+          position: absolute;
+          width: 90%;
+          margin: 0% 5% 0% 5%;
+          height: 110%;
+          padding: 20% 2% 2% 2%;
+          border-radius: 1% !important;
+          background-color: #f2f2f2;
+          top: 70%;
+
+          .name {
+            text-align: center;
+            width: 100%;
+          }
+
+        }
+        img {
+            margin: auto;
+            width: 110px;
+        }
+    }
+    .photos {
+      margin: auto;
+      margin-top: 25vh;
+      width: 90%;
+      height: 63vw;
+    }
+    .profile {
+        .select,
+        .item,
+        .ionlist {
+            font-size: 14px !important;
+            padding-left: 10px !important;
+        }
+        margin: 0 !important;
+    }
+    .search {
+        background-color: #f2f2f2;
+        padding: 15px;
+        input {
+            padding-left: 20px;
+            margin: 0;
+            width: 100%;
+            box-shadow: .5px .5px;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.16), 0 1px 2px rgba(0, 0, 0, 0.23);
+            height: 6vh;
+        }
+    }
+    .friends-section {
+        .item {
+            width: 100% !important;
+        }
+    }
+    .settings {
+        input {
+            margin-left: 20px;
+            margin-top: 12px;
+            width: calc(100% - 40px);
+            background: rgba(256, 256, 256, 0.5);
+            border: 0.55px solid #c8c7cc;
+            padding-left: 10px;
+        }
+        ion-toggle {
+            margin-left: 20px;
+            padding-left: 0;
+        }
+    }
+    .help {
+        ion-icon {
+            margin-left: 20px;
+            float: left;
+        }
+        .title {
+            margin-top: 20px;
+        }
+        .border_ {
+            border-bottom: 1px solid #c8c7cc;
+            margin: 30px 20px 0 20px;
+        }
+        .help_des {
+            text-align: left;
+            padding-left: 20px;
+            color: #c8c7cc;
+            font-size: 15px;
+            font-weight: 100;
+        }
+    }
+    .errMessageH {
+        color: red;
+        font-size: 13px;
+        display: none;
+    }
+    .combo-select {
+        max-width: 100% !important;
+        text-align: right;
+    }
+    .combo-label {
+        display: flex !important;
+        align-content: center !important;
+        align-items: center !important;
+    }
+    .border-bottom {
+      border-bottom: .5px solid #c8c7cc;
+    }
+    ion-radio {
+        margin-left: auto;
+    }
+    .iolist {
+        display: flex;
+        align-items: center;
+        width: 50%;
+        border-top: 0px !important;
+    }
+    .item {
+        width: 50% !important;
+        padding-bottom: 0px;
+    }
+    .item-md.item-block .item-inner,
+    .item-ios.item-block .item-inner {
+        border-bottom: 0px !important;
+    }
+    .label-container {
+        width: 100% !important;
+        padding-right: 5px !important;
+        display: flex;
+        flex-flow: row wrap;
+        align-content: center;
+    }
+    .radio-ios .radio-checked .radio-inner {
+        left: 5px;
+        top: -3px;
+        position: absolute;
+        width: 6px;
+        height: 12px;
+        border-width: 2px;
+        border-top-width: 0;
+        border-left-width: 0;
+        border-style: solid;
+        border-color: #D80D88;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+    .radio-ios .radio-icon {
+        position: relative;
+        display: block;
+        width: 13px;
+        height: 13px;
+        border: 1px solid black;
+    }
+    .radio-ios .radio-checked {
+        border: 1px solid #D80D88;
+    }
+    .chat-section {
+      .item {
+        width: 100% !important;
+      }
+      .mainDiv {
+        border-top: 0px !important;
+        .item-ios{
+          top: 9px;
+          margin-left: 2%;
+        }
+      }
+      .itemDes {
+        width: 80% !important;
+        float: right;
+      }
+      .pad-l-r {
+        padding: 0% 4% 0% 4%;
+      }
+      .label-md,
+      .label-ios {
+        margin: 0;
+      }
+      .messtime {
+        margin-right: 0px;
+      }
+    }
+
+}

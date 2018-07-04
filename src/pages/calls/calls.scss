@@ -1,0 +1,145 @@
+page-calls {
+
+
+    .scroll-content {
+      padding: 0% 4% 0% 4%;
+      top: 18px !important;
+      overflow: auto !important;
+    }
+    ion-header {
+        height: 101px;
+    }
+    .transparent {
+        background-color: transparent;
+        color: black;
+        padding: 5px;
+    }
+    .trans {
+        background-color: rgba(255, 255, 255, 1);
+    }
+    .trans2 {
+        background-color: rgba(255, 255, 255, 1);
+    }
+    .callstyle {
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+    .messtime {
+        float: right;
+        margin-top: -10px;
+        span {
+            font-size: 10px;
+            margin-right: 10px;
+            color: #a9a9a9;
+            margin-top: 4px;
+        }
+    }
+    .itemDes {
+        background-color: transparent;
+        // border-bottom: 1px solid lightgrey;
+        display: inline-block;
+        width: 100%;
+        font-size: 13px;
+        color: black;
+        padding: 0px;
+        margin: 0px;
+    }
+    .mainDiv {
+      border-bottom: 1px solid lightgrey;
+        ion-col {
+            height: 55px;
+        }
+    }
+    .name {
+        position: relative;
+        top: 0px;
+        font-size: 12px;
+        color: red;
+    }
+    .friendIcon {
+        margin-right: 5px;
+        color: #65b9e8;
+        font-size: 20px;
+    }
+    .callkind {
+        margin-right: 6px;
+        color: #a9a9a9;
+        font-size: 12px;
+    }
+    .modifierCancel {
+        background: transparent;
+        color: white;
+        margin-left: 5px;
+        margin-top: 5px;
+    }
+    .removemodifiercover {
+        height: 100%;
+    }
+    .removemodifier {
+        color: #de127a;
+        margin: auto;
+        font-size: 19px;
+    }
+    .titleClass {
+        width: 100%;
+        height: 38px;
+        .modifier {
+            background: transparent;
+            color: white;
+            margin-left: 5px;
+        }
+        col {
+            text-align: center;
+        }
+        .closeBtn {
+            color: gray;
+            font-size: 20px;
+            background-color: transparent;
+        }
+        .distinguish {
+            width: 100%;
+            padding: 0;
+            border-radius: 5px;
+            overflow: hidden;
+            height: 23px;
+            float: left;
+            border: 1px solid color($colors, primary);
+            .selected {
+                width: 50%;
+                height: 100%;
+                background: color($colors, primary);
+                text-align: center;
+                font-size: 10px;
+                color: white;
+            }
+            .unselected {
+                width: 50%;
+                height: 100%;
+                background: white;
+                text-align: center;
+                font-size: 10px;
+                color: color($colors, primary);
+            }
+        }
+        .addButton {
+            color: gray;
+            font-size: 23px;
+            background-color: transparent;
+            float: right;
+            padding-right: 6px;
+        }
+    }
+    #Header2 {
+        padding-left: 6px;
+        padding-right: 6px;
+        padding-bottom: 8px;
+        width: 100%;
+        ion-input {
+            border-radius: 3px;
+            border: none;
+            width: 100%;
+            text-align: center;
+            height: 27px;
+        }
+    }
+}

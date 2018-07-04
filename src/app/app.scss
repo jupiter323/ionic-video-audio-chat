@@ -1,0 +1,186 @@
+// http://ionicframework.com/docs/theming/
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+// http://ionicframework.com/docs/theming/
+@font-face {
+  font-family: Avenir;
+  src: url('../assets/font/Avenir-Book.ttf') format("truetype");
+  font-weight: 200
+}
+
+ion-app.md, ion-app.ios {
+  font-family: Avenir;
+}
+
+ion-app.ios{
+  ion-menu {
+    margin-top: 18px;
+  }
+  ion-title {
+    // margin-top: 18px;
+  }
+  ion-header {
+    padding-top:18px;
+    background-color: #f8f8f8;
+  }
+  ion-navbar {
+    background-color: #f8f8f8;
+    .toolbar-title {
+        margin-top: 30px; // Margin top from the StatusBar
+        // margin-right: 22px; // Maybe you don't need this, depending how your layout looks like
+    }
+    .toolbar-background-ios {
+      background-color: transparent;
+    }
+    // Here is how you can center your title
+    &.toolbar {
+        padding-left: 6px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+  }
+}
+
+@font-face {
+    font-family: High_Tide;
+    src: url('../assets/font/High_Tide.ttf') format("truetype");
+    font-weight: 200
+}
+
+
+
+.isInCall {
+    display: none;
+}
+
+.profileImage {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.padding {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+} // @todo: get rid of all the important statements.
+// was easier to just do be lazy when converting from v1 to v2.
+.round {
+    width: 16vh;
+    height: 16vh;
+    border-radius: 50%;
+    border: #e5e5e5 solid 4px;
+    margin: auto;
+    margin-top: 6vh;
+    overflow: hidden;
+}
+
+.name_style {
+    text-transform: capitalize;
+    margin: auto;
+}
+
+.avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.content-ios {
+    // margin-top: 17px !important;
+}
+
+.photos {
+    margin: auto;
+    margin-top: 20px;
+    width: 82vw;
+    height: 54vw;
+    .photos_row {
+        width: 100%;
+        height: 50%;
+        .photos_col {
+            background: #7f7f7f;
+            width: 33%;
+            height: 100%;
+            float: left;
+            img {
+                width: 100%; // height: 100%;;
+            }
+            overflow: hidden;
+            border: 0.02px solid white;
+        }
+    }
+}
+
+ion-title {
+    width: 100%;
+    text-align: center;
+}
+
+.menu-items {
+    display: block;
+    font-size: 14px;
+    background: none;
+    margin-top: 1vh;
+    width: 100%;
+    .item {
+        text-align: left;
+        width: 70% !important;
+        padding-bottom: 10px;
+        display: inline-block;
+    }
+    .item-icon {
+        text-align: right;
+        padding-right: 3%;
+        width: 25% !important;
+        display: inline-block;
+    }
+}
+
+#menu-splitter {
+    margin: 3vh;
+}
+
+.menu-avatar {
+    width: 20vh;
+    height: 20vh;
+    border-radius: 50%;
+    background-color: black;
+    margin-top: 1vh;
+    object-fit: cover;
+}
+
+.version-info {
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.app-name {
+    font-family: High_Tide !important;
+    font-weight: 200;
+    font-size: 2.7em;
+    color: gray;
+    margin-bottom: 2px;
+}
+
+.pd-t-b-20 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+@import "../theme/theme.scss";
